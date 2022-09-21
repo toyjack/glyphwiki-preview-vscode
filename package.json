@@ -1,0 +1,65 @@
+{
+  "name": "glyphwiki-preview",
+  "private": true,
+  "displayName": "Glyphwiki Preview",
+  "description": "Show image preview on hover from GlyphWiki",
+  "author": "Guanwei Liu",
+  "publisher": "toyjack",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toyjack/glyphwiki-preview-vscode.git"
+  },
+  "keywords": [
+    "vscode",
+    "image",
+    "glyphwiki",
+    "kanji",
+    "hanzi"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "GlyphWikiPreview",
+        "properties": {
+          "glyphwiki-preview.imagePreviewMaxWidth": {
+            "default": "100",
+            "description": "The max width of the image preview on hover",
+            "type": "number"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.71.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}
