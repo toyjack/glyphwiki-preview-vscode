@@ -6,7 +6,7 @@
   "description": "Show image preview on hover from GlyphWiki",
   "author": "Guanwei Liu",
   "publisher": "toyjack",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.71.0"
   },
