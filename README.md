@@ -4,13 +4,9 @@
 
 ## Screenshot
 
-![Screenshot](examples/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 ## Features
-
-TBD
-
-## Requirements
 
 TBD
 
@@ -21,10 +17,6 @@ TBD
 ```json
 "glyphwiki-preview.imagePreviewMaxWidth": 100
 ```
-
-## Known Issues
-
-TBD
 
 ## Release Notes
 

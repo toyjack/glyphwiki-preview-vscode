@@ -2,6 +2,7 @@
   "name": "glyphwiki-preview",
   "private": true,
   "displayName": "Glyphwiki Preview",
+  "icon": "images/logo.png",
   "description": "Show image preview on hover from GlyphWiki",
   "author": "Guanwei Liu",
   "publisher": "toyjack",
